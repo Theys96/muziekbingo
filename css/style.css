@@ -1,0 +1,301 @@
+
+/* General */
+html, body {
+   height: 100%;
+}
+
+body {
+   background-color: white;
+   background-image: url('background.jpg');
+   background-size: 100vw;
+   background-repeat: no-repeat;
+   font-family: 'PT Sans', sans-serif;
+}
+
+.blue-section {
+   background-color:  #00aab740;
+}
+
+.orange-section {
+   background-color: #f9e3beDD;
+}
+
+.page {
+   height: 100%;
+   padding-top: 20vh;
+   padding-bottom: 10vh;
+}
+
+.jumbotron {
+   margin: 50px;
+   padding-bottom: 10px;
+}
+
+.page-block {
+   margin: 30px;
+   height: calc(100vh - 100px);
+   background-color: #e9ecef;
+   border-color: #003d60;
+}
+
+.page-block .card-header.dark-header {
+   background-color: #003d60;
+   border-color: #002d50;
+}
+
+.page-block .card-header.menu-header {
+   padding: 5px;
+}
+
+.page-block .card-header.menu-header a {
+   margin: 2px;
+   margin-left: 1px;
+   margin-right: 1px;
+}
+
+.page-block .card-header h1 {
+   color: white;
+   margin: 0;
+}
+
+.full-scrollable {
+   overflow-y: scroll;
+   -webkit-overflow-scrolling: touch;
+   height: calc(100% - 100px);
+}
+
+.scrollable {
+   overflow-y: scroll;
+}
+
+@media (min-width: 920px) {
+   .page-block {
+      margin-left: 100px;
+      margin-right: 100px;
+   }
+} 
+
+@media (max-width: 720px) {
+   .page-block {
+      margin: 0px;
+      height: 100vh;
+      border-radius: 0;
+   }
+
+   .card-header {
+   	  border-radius: 0 !important;
+   }
+
+   .jumbotron {
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+   }
+}
+
+.icon {
+   height: 20px;
+}
+
+
+/* Headers */
+h1 {
+   display: block;
+   text-align: center;
+   color: #003d60;
+   font-size: 2em;
+}
+
+h2 {
+   color: #003d60;
+}
+
+h3 {
+   color: #003d60;
+}
+
+h4 {
+   color: #003d60;
+}
+
+
+/* Home page */
+.tagline {
+   font-size: 1.2em;
+}
+
+.btn-blue {
+   background-color: #b8ccc6;
+}
+
+.btn-blue:hover {
+   background-color: #00aab7;
+}
+
+.codeinput {
+   width: 100%;
+   margin: 30px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+@media (min-width : 800px) {
+   .codeinput {
+      width: 50%;
+   }
+}
+
+.lighttext {
+   color: gray;
+}
+
+
+/* Language corner */
+.cornerdiv {
+   position: absolute;
+   right: 0px;
+   top: 0px;
+   padding: 1em;
+   z-index: 6;
+}
+
+.lang {
+   height: 3em;
+   margin: 0.5em;
+}
+
+.lang-inline {
+   height: 38px;
+   margin-left:  5px;
+   margin-right: 5px;
+}
+
+@media (max-width: 800px) {
+   .cornerdiv {
+      padding: 10px;
+   }
+   .lang {
+      height: 2em;
+   }
+}
+
+
+/* Full-page JS */
+.waitForPageLoad {
+   display: none;
+}
+
+
+/* Playlist editor */
+table.creator {
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+   border-collapse: separate;
+   border-spacing: 0px 0px;
+   background-color: rgb(200, 220, 240);
+}
+
+@media (max-width: 920px) {
+   table.creator {
+      width: 100%;
+   }
+}
+
+table.creator tr:nth-child(odd) {
+   background-color: rgb(200, 220, 240);
+}
+
+table.creator tr:nth-child(even) {
+   background-color: rgb(180, 200, 220);
+}
+
+table.creator tr.header td {
+   background-color: #003d60;
+   color: white;
+   padding: 2px;
+   padding-left: 4px;
+   font-weight: bold;
+   font-variant: small-caps;
+   font-size: 1.2em;
+}
+
+table.creator td.num {
+   padding-right: 5px !important;
+   background-color: rgb(176, 213, 221);
+   font-weight: bold;
+}
+
+table.creator.marged-creator td {
+   padding: 2px;
+}
+
+table.creator input {
+   width: 100%;
+   background-color: rgba(0,0,0,0);
+   border: none;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   padding-left: 3px;
+}
+
+table.creator input:hover {
+   background-color: rgba(0,0,0,0.1);
+}
+
+a.delete-song:hover {
+   background-color: #dc3545;
+   border-color: #dc3545;
+   cursor: pointer;
+}
+
+a.add-song {
+   border-radius: 20px;
+   width: 40px;
+   height: 40px;
+   margin: 5px;
+   font-size: 30px;
+   line-height: 30px;
+}
+
+a.delete-song:hover {
+   cursor: pointer;
+}
+
+/* Spotify stuff */
+img.spotify_cover {
+   height: 80px;
+}
+
+.btn-spotify {
+   background-color: black;
+   color: white;
+   background-image: url('spotify.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: left middle;
+   padding-left: 2em;
+
+}
+
+.btn-spotify:hover {
+   color: #1DB954;
+}
+
+
+
+/* Playlist creator */
+#codeInputBlock {
+   display: none;
+}
+
+.captcha-img {
+   width: 200px;
+}
+
+.captcha-input {
+   width: 200px;
+}
+
+
