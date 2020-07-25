@@ -1,0 +1,6 @@
+[submodule "lib/tfpdf"]
+	path = lib/tfpdf
+	url = https://github.com/Setasign/tFPDF
+[submodule "lib/securimage"]
+	path = lib/securimage
+	url = https://github.com/dapphp/securimage
